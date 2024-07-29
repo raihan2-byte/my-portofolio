@@ -3,6 +3,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
+import PDF from "../../assets/Resume/CV_RaihanAlfarisi(1).pdf"
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -13,9 +14,9 @@ export default function AboutMe(props) {
   
   const SCREEN_CONSTSANTS = {
     description:
-      "A sophomore at Brawijaya University majoring in Information Technology. Enthusiastic and highly motivated student who is having desire to continuously developed his skills, especially in leadership. initiative and looking for new challenges also experienced in various internal and external campus organizations.",
+      "Fresh Graduate of Information Technology at Brawijaya University who experienced in Back End with (Golang and Node Js) Programming also specializing in learning HTML, CSS, Javascript, React JS, Java, PHP, MySQL. Have finished my KMPF UNJ's first freelance website project and currently handling Green Welfare's Back End Website project. I'm such a fast learner and self-motivated person who love to work individually or team and looking further to develop my skills with professional experiences.",
     highlights: {
-      bullets: ["FullStack Developer", "Android Developer", "Java Programming"],
+      bullets: ["Back End Developer", "Fullstack Developer", "Golang Developer"],
       heading: "Here are a Few Highlights:",
     },
   };
@@ -50,7 +51,7 @@ export default function AboutMe(props) {
                 Hire Me
               </button>
               <a
-                href="CV-Raihan-Alfarisi.pdf"
+                href={PDF}
                 download="raihan CV-Raihan-Alfarisi.pdf"
               >
                 <button className="btn highlighted-btn">Get Resume</button>
