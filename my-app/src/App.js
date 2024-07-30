@@ -1,11 +1,18 @@
-import './App.css';
-import PortofolioContainer from './PortofolioContainer/PortofolioContainer';
+import "./App.css";
+import PortofolioContainer from "./PortofolioContainer/PortofolioContainer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='App'>
-      <PortofolioContainer/>
-    </div>
+    <section>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<PortofolioContainer />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </section>
   );
 }
 
