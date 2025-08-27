@@ -44,7 +44,6 @@ export default function Resume(props) {
     { label: "Experience History", logoSrc: "work-history.svg" },
     // { label: "Programming skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   const programmingSkillsDetails = [
@@ -61,29 +60,25 @@ export default function Resume(props) {
   const projectsDetails = [
     {
       title: "Green Welfare Indonesia",
-      duration: { fromDate: "Jul 2023", toDate: "Present" },
-      description: "integrated Midtrans for payments and donations, optimized SQL database performance using ACID properties, and secured access with JWT authentication and authorization.",
+      duration: { fromDate: "Jul 2023", toDate: "Nov 2024" },
+      description:
+        "integrated Midtrans for payments and donations, optimized SQL database performance using ACID properties, and secured access with JWT authentication and authorization.",
       subHeading: "Technology Used : Golang, Gorm, Mysql, Gin",
     },
     {
       title: "Annisa Salon Muslimah",
       duration: { fromDate: "Oct 2023", toDate: "Des 2024" },
-      description: "Collaborated to align technical solutions with business goals, designed and maintained a Golang backend with efficient SQL structures, and optimized the UI using ReactJS and Tailwind CSS for a modern, responsive experience.",
+      description:
+        "Collaborated to align technical solutions with business goals, designed and maintained a Golang backend with efficient SQL structures, and optimized the UI using ReactJS and Tailwind CSS for a modern, responsive experience.",
       subHeading: "Technology Used : React JS, Tailwind, Golang, Mysql",
     },
     {
       title: "KMPF UNJ 204",
       duration: { fromDate: "Jul", toDate: "Sep 2023" },
-      description: "Built efficient backend systems with Golang and SQL and implemented a dynamic, responsive front-end. Website has been successfully viewed by over 500 users in three months.",
+      description:
+        "Built efficient backend systems with Golang and SQL and implemented a dynamic, responsive front-end. Website has been successfully viewed by over 500 users in three months.",
       subHeading: "Technology Used : React JS, Scss, Golang, Mysql, Gin, Gorm",
     },
-    {
-      title: "Building API Shopping Store With Hacktiv8",
-      duration: { fromDate: "May", toDate: "Jun 2023" },
-      description: "Developed a Golang web shop API with efficient CRUD operations. Optimized PostgreSQL for fast data access and implemented role-based access control with authentication and authorization.",
-      subHeading: "Technology Used : Golang, Mysql, Gin",
-    },
-    
   ];
 
   const resumeDetails = [
@@ -99,10 +94,30 @@ export default function Resume(props) {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
+          heading={"PT Bank SMBC Indonesia"}
+          subHeading={"Java Developer"}
+          fromDate={"Nov 2024 "}
+          toDate={" present"}
+        />
+
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Developed and integrated the e-Form application for Bank Jenius
+            using Java and React.js, enhancing customer registration processing
+            via SMBC. Improved code quality and security with SonarQube,
+            achieving high coverage and maintainability. Streamlined project
+            management through Scrum and Jira for efficient collaboration and
+            task tracking.
+          </span>
+          <br />
+        </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
           heading={"Green Welfare Indonesia"}
           subHeading={"Director Of Technology"}
           fromDate={"Des 2024 "}
-          toDate={" present"}
+          toDate={" Nov 2024"}
         />
 
         <div className="experience-description">
@@ -116,7 +131,7 @@ export default function Resume(props) {
           <br />
         </div>
       </div>
-      <div className="experience-container">
+      {/* <div className="experience-container">
         <ResumeHeading
           heading={"Hacktiv8"}
           subHeading={"Golang Independent Study for Back End Programmers"}
@@ -133,27 +148,8 @@ export default function Resume(props) {
           </span>
           <br />
         </div>
-      </div>
-      
+      </div> */}
     </div>,
-
-    // <div
-    //   className="resume-screen-container programming-skills-container"
-    //   key="programming-skills"
-    // >
-    //   {programmingSkillsDetails.map((skill, index) => (
-    //     <div className="skill-parent" key={index}>
-    //       <div className="heading-bullet"></div>
-    //       <span>{skill.skill}</span>
-    //       <div className="skill-percentage">
-    //         <div
-    //           style={{ width: skill.ratingPercentage + "%" }}
-    //           className="active-percentage-bar"
-    //         ></div>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>,
 
     <div className="resume-screen-container" key="propjects">
       {projectsDetails.map((projectsDetails, index) => (
@@ -166,20 +162,6 @@ export default function Resume(props) {
           toDate={projectsDetails.duration.toDate}
         />
       ))}
-    </div>,
-    <div className="resume-screen-container" key="interests">
-      <ResumeHeading
-        heading="Sport"
-        description="Saya suka berolahraga khususnya bermain badminton dan futsal"
-      />
-      <ResumeHeading
-        heading="Music"
-        description="Saya suka bermain musik yaitu gitar"
-      />
-      <ResumeHeading
-        heading="Games"
-        description="Saya suka mengisi waktu luang saya dalam bermain game diantaranya mobile legend"
-      />
     </div>,
   ];
 

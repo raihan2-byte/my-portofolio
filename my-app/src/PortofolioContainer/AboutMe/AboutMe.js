@@ -3,7 +3,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
-import PDF from "../../assets/Resume/CV_RaihanAlfarisi(1).pdf"
+import PDF from "../../assets/Resume/CV_RaihanAlfarisi_BackEnd.pdf"
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -14,9 +14,9 @@ export default function AboutMe(props) {
   
   const SCREEN_CONSTSANTS = {
     description:
-      "Fresh Graduate of Information Technology at Brawijaya University who experienced in Back End with (Golang and Node Js) Programming also specializing in learning HTML, CSS, Javascript, React JS, Java, PHP, MySQL. Have finished my KMPF UNJ's first freelance website project and currently handling Green Welfare's Back End Website project. I'm such a fast learner and self-motivated person who love to work individually or team and looking further to develop my skills with professional experiences.",
+      "Software Engineer with experience in several development projects, specializing in back-end development using Golang and Java. I also have hands-on experience with front-end technologies such as HTML, CSS, JavaScript, and React.js, as well as proficiency in PHP, Node JS, Phyton, MySQL, and PostgreSQL. As a fast learner and self-motivated individual, i am known for adaptability skill that enable to learn new things quickly and enjoy working on a team or individually. I also eager to further develop my skills through professional experiences, especially in Back End Developer.",
     highlights: {
-      bullets: ["Back End Developer", "Fullstack Developer", "Golang Developer"],
+      bullets: ["Back End Developer", "Fullstack Developer", "Golang Developer", "Java Developer"],
       heading: "Here are a Few Highlights:",
     },
   };

@@ -2,7 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 import ScrollService from "../../../utilities/ScrollService";
-import PDF from "../../../assets/Resume/CV_RaihanAlfarisi(1).pdf"
+import PDF from "../../../assets/Resume/CV_RaihanAlfarisi_BackEnd.pdf"
 
 export default function Profile() {
   return (
@@ -47,8 +47,8 @@ export default function Profile() {
                 />
               </h1> */}
               <span className="profile-role-tagline">
-                Fresh Graduate Information Technology at Brawijaya
-                University | Director of Technology at Green Welfare Indonesia |
+                Java Developer at PT Bank SMBC Indonesia | Graduate of Information Technology, Brawijaya
+                Universitsy | Lead of Developer at Green Welfare Indonesia |
                 Freelance Website Developer | Back-End Development Enthusiast{" "}
               </span>
             </span>
@@ -63,7 +63,7 @@ export default function Profile() {
             </button>
             <a
               href={PDF}
-              download="CV_RaihanAlfarisi(1).pdf"
+              download="CV_RaihanAlfarisi.pdf"
             >
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
